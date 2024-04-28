@@ -9,22 +9,22 @@ The purpose of this analysis was to use machine learning and neural networks to 
 
 > Data Preprocessing
 
-1.What variable(s) are the target(s) for your model?/
+1.What variable(s) are the target(s) for your model?\
 y = 'IS_SUCCESSFUL' is the target variable. 
 
-2.What variable(s) are the features for your model?/
-X = all the remaining variables are the features from the application_df when ".drop(columns="IS_SUCCESSFUL")" is applied: 'NAME','APPLICATION_TYPE','AFFILIATION','CLASSIFICATION','USE_CASE','ORGANIZATION','STATUS','INCOME_AMT','SPECIAL_CONSIDERATIONS','ASK_AMT.
+2.What variable(s) are the features for your model?\
+X = all the remaining variables are the features from the application_df when ".drop(columns="IS_SUCCESSFUL")" is applied:\ 'NAME','APPLICATION_TYPE','AFFILIATION','CLASSIFICATION','USE_CASE','ORGANIZATION','STATUS','INCOME_AMT','SPECIAL_CONSIDERATIONS','ASK_AMT.
 
-3.What variable(s) should be removed from the input data because they are neither targets nor features?/
+3.What variable(s) should be removed from the input data because they are neither targets nor features?\
 'EIN' is absolutely unique identifier and should be removed from input data. 
 
 > Compiling, Training, and Evaluating the Model
 
-4.How many neurons, layers, and activation functions did you select for your neural network model, and why?/
-5.Were you able to achieve the target model performance?/ 
-6.What steps did you take in your attempts to increase model performance?/
+4.How many neurons, layers, and activation functions did you select for your neural network model, and why?\
+5.Were you able to achieve the target model performance?\
+6.What steps did you take in your attempts to increase model performance?\
 
-I took the following steps to optimize the model:/
+I took the following steps to optimize the model:\
 
 -Attempt #1: Add more neurons
 1st hidden layer: units=120, activation function="relu"
