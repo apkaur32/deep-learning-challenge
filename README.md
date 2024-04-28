@@ -14,7 +14,7 @@ y = 'IS_SUCCESSFUL' is the target variable.
 
 2. What variable(s) are the features for your model?\
 X = all the remaining variables are the features from the application_df when ".drop(columns="IS_SUCCESSFUL")" is applied:
-'NAME', 'APPLICATION_TYPE', 'AFFILIATION', 'CLASSIFICATION', 'USE_CASE', 'ORGANIZATION', 'STATUS', 'INCOME_AMT', 'SPECIAL_CONSIDERATIONS', 'ASK_AMT.
+* 'NAME', 'APPLICATION_TYPE', 'AFFILIATION', 'CLASSIFICATION', 'USE_CASE', 'ORGANIZATION', 'STATUS', 'INCOME_AMT', 'SPECIAL_CONSIDERATIONS', 'ASK_AMT.
 
 3. What variable(s) should be removed from the input data because they are neither targets nor features?\
 'EIN' is absolutely unique identifier and should be removed from input data. 
@@ -29,7 +29,7 @@ I took the following steps to optimize the model:
 
 -Attempt #1: Add more neurons
 * 1st hidden layer: units=120, activation function="relu"
-* 2nd hidden layer: units=60, activation function="relu"
+* 2nd hidden layer: units=60, activation function="relu"\
 RESULTS 1: Accuracy: 72.6%\
 Adding more neurons did not increase accuracy, tried different activation functions next.
 
@@ -41,7 +41,7 @@ Adding more neurons did not increase accuracy, tried different activation functi
 RESULTS 2: Accuracy: 72.4%\
 Adding more hidden layer, and using different activation function still did not increase any accuracy. Tried another combination next.
 
--Attempt #3: Add Dropout to minimize co-adaptation of nodes and reduce overfitting; and use activation function: LeakyReLU\
+-Attempt #3: Add Dropout to minimize co-adaptation of nodes and reduce overfitting; and use activation function: LeakyReLU
 * 1st hidden layer: units=60, activation function="LeakyReLU", Dropout(0.2)
 * 2nd hidden layer: units=20, activation function="LeakyReLU", Dropout(0.2)
 * number of epochs=50\
@@ -50,7 +50,7 @@ No improvement in acccuracy so I revisited the preprocessed dataset and decided 
 
 -Attempt #4: (FINAL) by keeping 'NAME' column intact and creating bins
 * 1st hidden layer: units=80, activation function="relu"
-* 2nd hidden layer: units=30, activation function="relu"
+* 2nd hidden layer: units=30, activation function="relu"\
 RESULTS 4: ~ 78% Accuracy achieved\
 Not dropping 'NAME' column from the dataset and creating bins in this column for rare values fewer than 10 was the right approach for optimizing our model.
 
