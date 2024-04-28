@@ -39,7 +39,7 @@ I took the following steps to optimize the model:
 * 3rd hidden layer: units=20, activation function="tanh"
 * number of epochs=50
 * RESULTS 2: Accuracy: 72.4%
-  *  Adding more hidden layer, and using different activation function still did not increase any accuracy. Tried another combination next.
+  *  Adding more hidden layer, and using different activation function still did not increase any accuracy.
 
 -Attempt #3: Add Dropout to minimize co-adaptation of nodes and reduce overfitting; and use activation function: LeakyReLU
 * 1st hidden layer: units=60, activation function="LeakyReLU", Dropout(0.2)
