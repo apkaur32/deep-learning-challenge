@@ -34,9 +34,9 @@ RESULTS 1: Accuracy: 72.6%\
 Adding more neurons did not increase accuracy, tried different activation functions next.
 
 -Attempt #2: Add another hidden layer, use different activation functions, reduce epochs number\
-1st hidden layer: units=120, activation function="relu"\
-2nd hidden layer: units=60, activation function="relu"\
-3rd hidden layer: units=20, activation function="tanh"\
+*1st hidden layer: units=120, activation function="relu"\
+*2nd hidden layer: units=60, activation function="relu"\
+*3rd hidden layer: units=20, activation function="tanh"\
 number of epochs=50\
 RESULTS 2: Accuracy: 72.4%\
 Adding more hidden layer, and using different activation function still did not increase any accuracy. Tried another combination next.
