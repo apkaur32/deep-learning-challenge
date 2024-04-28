@@ -33,7 +33,7 @@ I took the following steps to optimize the model:
 * RESULTS 1: Accuracy: 72.6%
   *  Adding more neurons did not increase accuracy, tried different activation functions next.
 
-![Screenshot 2024-04-28 at 2 20 17 PM](https://github.com/apkaur32/deep-learning-challenge/assets/150749167/ba6373e0-d62e-4e8f-91e8-e5514312f20d)
+![Screenshot 2024-04-28 at 3 06 53 PM](https://github.com/apkaur32/deep-learning-challenge/assets/150749167/8ea9d206-0bef-4b64-9ba7-54de6731c1f5)
  
 -Attempt #2: Add another hidden layer, use different activation functions, reduce epochs number
 * 1st hidden layer: units=120, activation function="relu"
@@ -56,7 +56,7 @@ I took the following steps to optimize the model:
 * RESULTS 4: ~ 78% Accuracy achieved
   *  Not dropping 'NAME' column from the dataset and creating bins in this column for rare values fewer than 10 was the right approach for optimizing our model.
 
-![Screenshot 2024-04-28 at 2 21 14 PM](https://github.com/apkaur32/deep-learning-challenge/assets/150749167/01808414-7377-4013-b685-409de204a913)
+![Screenshot 2024-04-28 at 3 07 28 PM](https://github.com/apkaur32/deep-learning-challenge/assets/150749167/2fc37d5c-f4dd-4cb7-b549-45c1e8b6354a)
 
 ## Summary of results:
 The overall results of the deep learning model predict that applicants who meet the following criteria have the best chance of success in their ventures, with the current accuracy rate of ~78% using our model: 
