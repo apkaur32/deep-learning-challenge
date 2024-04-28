@@ -2,7 +2,7 @@
 
 ![Screenshot 2024-04-28 at 1 21 33 PM](https://github.com/apkaur32/deep-learning-challenge/assets/150749167/f63e10ca-7ba7-4503-9e81-0b7bb99c58be)
 
-## Overview of the analysis: 
+## Overview of analysis: 
 The purpose of this analysis was to use machine learning and neural networks to assess the features in the provided dataset in order to create a binary classifier that can predict whether applicants will be successful if funded by nonprofit foundation named Alphabet Soup. The CSV contains more than 34,000 organizations that have received funding from Alphabet Soup over the years and our goal is to design a deep learning model which makes an accurate forecast for application success rate.
 
 ## Results:
@@ -33,6 +33,8 @@ I took the following steps to optimize the model:
 * RESULTS 1: Accuracy: 72.6%
   *  Adding more neurons did not increase accuracy, tried different activation functions next.
 
+![Screenshot 2024-04-28 at 2 20 17 PM](https://github.com/apkaur32/deep-learning-challenge/assets/150749167/ba6373e0-d62e-4e8f-91e8-e5514312f20d)
+ 
 -Attempt #2: Add another hidden layer, use different activation functions, reduce epochs number
 * 1st hidden layer: units=120, activation function="relu"
 * 2nd hidden layer: units=60, activation function="relu"
@@ -53,6 +55,8 @@ I took the following steps to optimize the model:
 * 2nd hidden layer: units=30, activation function="relu"
 * RESULTS 4: ~ 78% Accuracy achieved
   *  Not dropping 'NAME' column from the dataset and creating bins in this column for rare values fewer than 10 was the right approach for optimizing our model.
+
+![Screenshot 2024-04-28 at 2 21 14 PM](https://github.com/apkaur32/deep-learning-challenge/assets/150749167/01808414-7377-4013-b685-409de204a913)
 
 ## Summary of results:
 The overall results of the deep learning model predict that applicants who meet the following criteria have the best chance of success in their ventures, with the current accuracy rate of ~78% using our model: 
